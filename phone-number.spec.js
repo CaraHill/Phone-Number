@@ -26,7 +26,7 @@ describe('PhoneNumber()', () => {
     expect(phone.number()).toEqual(null);
   });
 
-  xtest('valid when 11 digits and starting with 1', () => {
+  test('valid when 11 digits and starting with 1', () => {
     const phone = new PhoneNumber('12234567890');
     expect(phone.number()).toEqual('2234567890');
   });
